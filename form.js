@@ -19,10 +19,10 @@ function testText(field, lng, reg = null) {
 
 function markFieldAsError(field, show, label) {
     if (show) {
-        field.style.borderStyle = 'solid';
+        field.style.borderColor = '#ff6347';
         label.style.visibility = 'visible';
     } else {
-        field.style.borderStyle = 'hidden';
+        field.style.borderColor = '#f5f7fa';
         label.style.visibility = 'hidden';
     }
 };

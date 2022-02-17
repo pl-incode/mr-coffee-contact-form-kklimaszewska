@@ -248,12 +248,14 @@ form {
     font-weight: bold;
     font-size: 20px;
     margin-bottom: 30px;
-    border-style: hidden;
-    border-color: #ff6347;
+    border-style: solid;
+    border-color: #f5f7fa;
+    border-width: thin;
+    outline: none;
 }
 
 textarea::placeholder {
-    color: #fff;
+    color: #fff; 
   }
 
 textarea {
@@ -275,7 +277,7 @@ label {
 
   .submit-btn {
     max-width: 20%;
-    background-color: #708090;
+    background: #708090;
     font-size: 30px;
     font-weight: bold;
     color: #fff;
