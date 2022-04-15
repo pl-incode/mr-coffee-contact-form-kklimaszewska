@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="./application.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mr.Coffee</title>
+    <script src="./form.js" defer></script>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+        <section class="header-img">
+            <img src="assets/full_logo_white.png" alt="logo" height="100%"/>
+        </section>
+        <section class="header-text">
+            <a class="header-link" href="index.html">Accueil</a>
+            <a class="header-link" href="about.html">Qui sommes-nous?</a>
+            <a class="header-link" href="#">Nous contacter</a>
+        </section>
+    </header>
+
+    <!-- webpage -->
+  <div class="content">
+
+    <div class="logo-img">
+      <img src="assets/logo_mrcoffee.png" alt="logo" height="100%"/>
+    </div>
+
+    <div class="contact-box">
+
+      <h2 class="open-hightext">Dites nous tout !</h2>
+      <form id="contactForm">
+        <div class="form-row">
+          <label for="surname">Nom *<span class="error-message" id="error-surname">&emsp;
+            Le nom de famille ne peut pas contenir de chiffres, d'espaces ou de caractères spéciaux. 
+            Il doit être composé d'au moins 3 lettres.</span></label>
+          <input type="text" name="surname" id="surname" required>
+        </div>
+        <div class="form-row">
+          <label for="name">Prénom *<span class="error-message" id="error-name">&emsp;
+            Le prénom ne peut pas contenir de chiffres, d'espaces ou de caractères spéciaux. 
+            Il doit être composé d'au moins 2 lettres.</span></label>
+          <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-row">
+          <label for="phone">Téléphone</label>
+          <input type="text" name="tel" id="phone">
+        </div>
+        <div class="form-row">
+          <label for="email">Adresse mail *<span class="error-message" id="error-email">&emsp;
+            L'e-mail doit contenir le signe @ et au moins un point (par exemple, contact@mr-coffee.com)</span></label>
+          <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-row">
+          <label for="msg">Message *<span class="error-message" id="error-msg">&emsp;
+            Le message ne peut pas être vide</span></label>
+          <textarea 
+                  type="message" 
+                  name="msg" 
+                  id="msg" 
+                  placeholder="Tapez votre message ici" 
+                  value=""
+                  required>
+          </textarea>
+        </div>
+        <div class="form-row">
+          <input type="submit" class="submit-btn" id="btn" value="ENVOYER">
+      </div>
+      </form>
+    
+      <h2 class="open-hightext">On vous attend !</h2>
+      <p class="contact-text"><span class="contact-boldtext">Mr.Coffee</span><br/>
+        15 place Jules Guesde<br/>
+        75006 Paris</p>
+      <p class="contact-text">Tel : +33 9 46 25 78 45<br/>
+        Mail : contact@mr-coffee.com</p>
+      <img class='contact-map' src="assets/carte_contact.png" alt="map">
+    </div>
+  </div>
+
+  <!--modal-->
+  <div id="myModal" class="modal">
+    <div class="modal-content">  
+      <img class="modal-img" src="./assets/logo_dark.png"></img>
+      <h2 class="modal-title">MERCI</br>
+        Votre message a bien été envoyé !</h2>
+      <p class="modal-text">Nous essaierons d&#8217;y répondre au mieux dans les plus brefs délais. À bientot chez Mr.Coffee</p>
+      <button class="close" id="close">FERMER</button>
+    </div>
+  </div>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="footer-img"><img src="assets/logo_blanc.png" alt="logo" height="100%"/></div>
+      <div class="footer-text">
+        <p>Suivez nous sur les réseaux sociaux ! <br/></p>
+        <img class="footer-social" src="assets/logo_linkedin.png" alt="linkedin" />
+        <img class="footer-social" src="assets/logo_twitter.png" alt="twitter" />
+        <img class="footer-social" src="assets/logo_facebook.png" alt="facebook" />
+        </div>
+    </footer>
+  
+  </body>
+</html>
